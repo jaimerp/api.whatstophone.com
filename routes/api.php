@@ -29,5 +29,9 @@ Route::apiResource('addrequest', RequestPhoneController::class)
 
 
 Route::get('addrequest', function () {
-    return redirect('https://api.whatstophone.com');
+    return redirect('https://whatstophone.com');
+});
+
+Route::get('api/login', function () {
+    return redirect('https://whatstophone.com');
 });
