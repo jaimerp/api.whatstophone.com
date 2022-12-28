@@ -14,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return redirect('https://whatstophone.com');
-// });
+Route::get('/', function () {
+    return redirect('https://whatstophone.com');
+});
 
-Route::get('test', [App\Http\Controllers\TestController::class, 'index'])->name('test');
+//Route::get('test', [App\Http\Controllers\TestController::class, 'index'])->name('test');
+
+Route::get('addrequest', function () {
+    return redirect('https://whatstophone.com');
+});
+
+Route::get('api/login', function () {
+    return redirect('https://whatstophone.com');
+});
 

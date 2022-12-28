@@ -28,10 +28,3 @@ Route::apiResource('addrequest', RequestPhoneController::class)
       ->middleware('throttle:5,1');
 
 
-Route::get('addrequest', function () {
-    return redirect('https://whatstophone.com');
-});
-
-Route::get('api/login', function () {
-    return redirect('https://whatstophone.com');
-});
