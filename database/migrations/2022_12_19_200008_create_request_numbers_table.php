@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('phone',12);
             $table->foreignId('zone_prefix_id')->constrained();
+            $table->string('platform',3);
             $table->timestamps();
         });
     }

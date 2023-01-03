@@ -20,6 +20,7 @@ class RequestPhoneController extends Controller
     {
         if (RequestNumber::create([
             'phone' => $request->phone,
+            'platform' => $request->platform,
             'zone_prefix_id' => $request->zone_prefix_id
         ])){
             return response()->json([

@@ -12,5 +12,6 @@ class RequestNumber extends Model
     protected $fillable = [
         'phone',
         'zone_prefix_id',
+        'platform',
     ];
 }
